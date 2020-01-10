@@ -25,9 +25,12 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        Produto::query()->create($request->all());
+        $produto = Produto::query()->create($request->all());
 
-        return response('', 201);
+        return response()->json(
+            $produto,
+            201
+        );
     }
 
     /**

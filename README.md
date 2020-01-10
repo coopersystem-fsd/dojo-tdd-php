@@ -8,15 +8,15 @@ Dojo sobre TDD utilizando PHP.
 - [x] Utilizar Eloquent como ORM para persistir dados
 - [x] Utilizar Docker para trabalhar com stack da aplicação
 - [x] Disponibilizar banco postgres
-- [ ] Criar Feature Test
+- [x] Criar Feature Test
     ```sh
        php artisan make:test ProdutoTest
     ```
-  - [ ] Rodar o Test da Feature dentro do container 
+  - [x] Rodar o Test da Feature dentro do container 
   ```sh
     vendor/bin/phpunit tests/Feature/NomeDaSuaClasseTest.php
   ```
-  - [ ] Rodar o Test de um método específico
+  - [x] Rodar o Test de um método específico
     ```sh
       vendor/bin/phpunit tests/Feature/NomeDaSuaClasseTest.php --filter=testNomeDoSeuMetodo
     ```
@@ -29,8 +29,8 @@ Dojo sobre TDD utilizando PHP.
     - updated_at
   - [x] Definir rota utilizando verbos HTTP
   - [ ] Testar requisição utilizando Laravel
-    - [ ] Verificar Status
-    - [ ] Tipo de retorno : JSON
+    - [x] Verificar Status
+    - [x] Tipo de retorno : JSON
   - [ ] Testar Cadastro do produto
     - [ ] Verificar se o produto foi armazenado no banco de dados
   - [ ] Testar consulta de um produto

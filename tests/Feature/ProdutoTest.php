@@ -19,8 +19,16 @@ class ProdutoTest extends TestCase
             'valor' => 10.00
         ];
 
-        $this->post('/api/produtos', $data)
-            ->assertStatus(201);
+        $response = $this->post('/api/produtos', $data);
+
+        $response
+            ->assertStatus(201)
+            ->assertJsonStructure([
+                'id',
+                'nome',
+                'quantidade',
+                'valor'
+            ]);
 
         $this->assertDatabaseHas('produtos', $data);
     }
