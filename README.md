@@ -41,10 +41,11 @@ Dojo sobre TDD utilizando PHP.
 ### Todo : Plus
 
 - [ ] Criar teste unitário para
+- [ ] Criar teste para uma feature mais complexa com regras de negócio
 
 ## Participantes
 
-- Alan Oliveira [ [@sfelix-martins](https://github.com/sfelix-martins) ]
+- Alan Oliveira 
 - Samuel Martins [ [@sfelix-martins](https://github.com/sfelix-martins) ]
 - Marcus Felipe [ [@mfelipec](https://github.com/mfelipec) ]
 - Odilon Garcez [ [@bc05](https://github.com/bc05) ]
