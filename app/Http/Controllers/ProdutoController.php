@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Produto;
 use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
@@ -24,7 +25,9 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Produto::query()->create($request->all());
+
+        return response('', 201);
     }
 
     /**

@@ -11,4 +11,9 @@ class Produto extends Model
         'quantidade',
         'valor',
     ];
+
+    public static function soma($a, $b)
+    {
+        return $a + $b;
+    }
 }
