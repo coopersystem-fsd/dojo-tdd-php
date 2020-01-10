@@ -9,6 +9,9 @@ Dojo sobre TDD utilizando PHP.
 - [x] Utilizar Docker para trabalhar com stack da aplicação
 - [x] Disponibilizar banco postgres
 - [ ] Criar Feature Test
+    ```sh
+       php artisan make:test ProdutoTest
+    ```
   - [x] Criar entidade Produto através do framework Laravel
     - id
     - nome
