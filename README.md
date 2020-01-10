@@ -8,7 +8,7 @@ Dojo sobre TDD utilizando PHP.
 - [x] Utilizar Eloquent como ORM para persistir dados
 - [x] Utilizar Docker para trabalhar com stack da aplicação
 - [x] Disponibilizar banco postgres
-- [x] Criar Feature Test
+- [ ] Criar Feature Test
   - [x] Criar entidade Produto através do framework Laravel
     - id
     - nome
@@ -17,19 +17,19 @@ Dojo sobre TDD utilizando PHP.
     - created_at
     - updated_at
   - [x] Definir rota utilizando verbos HTTP
-  - Testar requisição utilizando Laravel
-    - Verificar Status
-    - Tipo de retorno : JSON
-  - Testar Cadastro do produto
-    - Verificar se o produto foi armazenado no banco de dados
-  - Testar consulta de um produto
-  - Testar consulta de muitos produto
-  - Testar atualizar um produto
-  - Testar remoção de um produto
+  - [ ] Testar requisição utilizando Laravel
+    - [ ] Verificar Status
+    - [ ] Tipo de retorno : JSON
+  - [ ] Testar Cadastro do produto
+    - [ ] Verificar se o produto foi armazenado no banco de dados
+  - [ ] Testar consulta de um produto
+  - [ ] Testar consulta de muitos produto
+  - [ ] Testar atualizar um produto
+  - [ ] Testar remoção de um produto
 
 ### Todo : Plus
 
-- Criar teste unitário para
+- [ ] Criar teste unitário para
 
 ## Participantes
 
