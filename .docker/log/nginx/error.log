@@ -43,3 +43,4 @@
 2020/01/10 15:39:33 [error] 6#6: *4 no live upstreams while connecting to upstream, client: 192.168.80.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://localhost", host: "localhost"
 2020/01/10 15:39:34 [error] 6#6: *4 no live upstreams while connecting to upstream, client: 192.168.80.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://localhost", host: "localhost"
 2020/01/10 15:39:35 [error] 6#6: *4 no live upstreams while connecting to upstream, client: 192.168.80.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://localhost", host: "localhost"
+2020/01/10 18:42:21 [warn] 6#6: *8 an upstream response is buffered to a temporary file /var/cache/nginx/fastcgi_temp/1/00/0000000001 while reading upstream, client: 172.30.0.1, server: , request: "GET / HTTP/1.1", upstream: "fastcgi://172.30.0.4:9000", host: "localhost"

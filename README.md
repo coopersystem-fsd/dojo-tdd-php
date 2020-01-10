@@ -4,17 +4,19 @@ Dojo sobre TDD utilizando PHP.
 
 ## Todo
 
-- Utilizar Laravel na versão 6.2
-- Utilizar Eloquent como ORM para persistir dados
-- Criar Feature Test
-  - Criar entidade Produto através do framework Laravel
+- [x] Utilizar Laravel na versão 6.2
+- [x] Utilizar Eloquent como ORM para persistir dados
+- [x] Utilizar Docker para trabalhar com stack da aplicação
+- [x] Disponibilizar banco postgres
+- [x] Criar Feature Test
+  - [x] Criar entidade Produto através do framework Laravel
     - id
     - nome
     - quantidade
     - valor
     - created_at
     - updated_at
-  - Definir rota utilizando verbos HTTP
+  - [x] Definir rota utilizando verbos HTTP
   - Testar requisição utilizando Laravel
     - Verificar Status
     - Tipo de retorno : JSON
