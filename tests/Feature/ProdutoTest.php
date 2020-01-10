@@ -79,4 +79,15 @@ class ProdutoTest extends TestCase
             ->assertJson($produtos->toArray());
     }
 
+    public function testDeletarProduto()
+    {
+        $produto = factory(Produto::class)->create();
+
+        $response = $this->delete("/api/produtos/{$produto->getKey()}");
+
+        $this->assertDatabaseMissing('produtos', $produto->toArray());
+
+        $response->assertStatus(204);
+    }
+
 }

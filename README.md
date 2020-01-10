@@ -31,12 +31,12 @@ Dojo sobre TDD utilizando PHP.
   - [ ] Testar requisição utilizando Laravel
     - [x] Verificar Status
     - [x] Tipo de retorno : JSON
-  - [ ] Testar Cadastro do produto
-    - [ ] Verificar se o produto foi armazenado no banco de dados
+  - [x] Testar Cadastro do produto
+    - [x] Verificar se o produto foi armazenado no banco de dados
+  - [x] Testar consulta de muitos produto
+  - [x] Testar atualizar um produto
+  - [x] Testar remoção de um produto
   - [ ] Testar consulta de um produto
-  - [ ] Testar consulta de muitos produto
-  - [ ] Testar atualizar um produto
-  - [ ] Testar remoção de um produto
 
 ### Todo : Plus
 
