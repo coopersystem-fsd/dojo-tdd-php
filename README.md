@@ -12,6 +12,14 @@ Dojo sobre TDD utilizando PHP.
     ```sh
        php artisan make:test ProdutoTest
     ```
+  - [ ] Rodar o Test da Feature dentro do container 
+  ```sh
+    vendor/bin/phpunit tests/Feature/NomeDaSuaClasseTest.php
+  ```
+  - [ ] Rodar o Test de um método específico
+    ```sh
+      vendor/bin/phpunit tests/Feature/NomeDaSuaClasseTest.php --filter=testNomeDoSeuMetodo
+    ```
   - [x] Criar entidade Produto através do framework Laravel
     - id
     - nome
