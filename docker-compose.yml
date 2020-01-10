@@ -1,0 +1,41 @@
+version: '3'
+services:
+    cofrinhoapp:
+        build: .
+        volumes:
+            - ./:/var/www
+        depends_on:
+            - cofrinhoapp-postgres
+            - cofrinhoapp-redis
+        ports:
+            - "9000"
+
+    cofrinhoapp-postgres:
+        image: postgres:12-alpine
+        restart: always
+        ports:
+            - "5432"
+        volumes:
+            - "./.docker/dbdata:/var/lib/postgresql/data"
+        environment:
+            - POSTGRES_DB='cofrinho_db'
+            - POSTGRES_USER='postgres'
+            - POSTGRES_PASSWORD='postgres'
+
+    cofrinhoapp-redis:
+        image: redis:alpine
+        volumes:
+            - ./.docker/redis:/data
+        expose:
+            - 6379
+
+    cofrinhoapp-nginx:
+        build: ./.docker/nginx
+        restart: always
+        ports:
+            - "80:80"
+        volumes:
+            - ./:/var/www
+            - ./.docker/log/nginx:/var/log/nginx
+        depends_on:
+            - cofrinhoapp
