@@ -13,11 +13,9 @@ class ProdutoTest extends TestCase
 
     public function testCriacaoDeProduto()
     {
-        $data = [
-            'nome' => 'Garrafa',
-            'quantidade' => 10,
-            'valor' => 10.00
-        ];
+        $product = factory(Produto::class)->make();
+
+        $data = $product->toArray();
 
         $response = $this->post('/api/produtos', $data);
 
@@ -31,12 +29,5 @@ class ProdutoTest extends TestCase
             ]);
 
         $this->assertDatabaseHas('produtos', $data);
-    }
-
-    public function testSoma()
-    {
-        $res = Produto::soma(1, 2);
-
-        $this->assertEquals(3, $res);
     }
 }
