@@ -14,7 +14,8 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        //
+        $produtos = Produto::all();
+        return response()->json($produtos->toArray());
     }
 
     /**
@@ -53,7 +54,14 @@ class ProdutoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $produto = Produto::query()
+            ->findOrFail($id);
+
+        $produto->fill($request->all());
+        $produto->saveOrFail();
+
+        return response()
+            ->json(null, 204);
     }
 
     /**
