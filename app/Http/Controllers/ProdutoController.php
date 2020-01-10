@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Produto;
 use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class ProdutoController extends Controller
 {
@@ -30,7 +31,7 @@ class ProdutoController extends Controller
 
         return response()->json(
             $produto,
-            201
+            Response::HTTP_CREATED
         );
     }
 
@@ -42,7 +43,9 @@ class ProdutoController extends Controller
      */
     public function show($id)
     {
-        //
+        $produto = Produto::query()->findOrFail($id);
+
+        return response()->json($produto, Response::HTTP_OK);
     }
 
     /**
@@ -61,7 +64,7 @@ class ProdutoController extends Controller
         $produto->saveOrFail();
 
         return response()
-            ->json(null, 204);
+            ->json(null, Response::HTTP_NO_CONTENT);
     }
 
     /**
@@ -77,6 +80,6 @@ class ProdutoController extends Controller
 
         $produto->delete();
 
-        return response()->json(null, 204);
+        return response()->json(null, Response::HTTP_NO_CONTENT);
     }
 }

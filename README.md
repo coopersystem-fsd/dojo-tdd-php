@@ -28,7 +28,7 @@ Dojo sobre TDD utilizando PHP.
     - created_at
     - updated_at
   - [x] Definir rota utilizando verbos HTTP
-  - [ ] Testar requisição utilizando Laravel
+  - [x] Testar requisição utilizando Laravel
     - [x] Verificar Status
     - [x] Tipo de retorno : JSON
   - [x] Testar Cadastro do produto
@@ -36,7 +36,7 @@ Dojo sobre TDD utilizando PHP.
   - [x] Testar consulta de muitos produto
   - [x] Testar atualizar um produto
   - [x] Testar remoção de um produto
-  - [ ] Testar consulta de um produto
+  - [x] Testar consulta de um produto
 
 ### Todo : Plus
 

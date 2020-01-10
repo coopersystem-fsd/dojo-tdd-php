@@ -90,4 +90,15 @@ class ProdutoTest extends TestCase
         $response->assertStatus(204);
     }
 
+    public function testConsultarProdutoPorId()
+    {
+        $produto = factory(Produto::class)->create();
+
+        $response = $this->get("/api/produtos/{$produto->getKey()}");
+
+        $response
+            ->assertStatus(200)
+            ->assertJson($produto->toArray());
+    }
+
 }
