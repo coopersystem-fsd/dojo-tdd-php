@@ -2,6 +2,33 @@
 
 Dojo sobre TDD utilizando PHP.
 
+## Todo
+
+- Utilizar Laravel na versão 6.2
+- Utilizar Eloquent como ORM para persistir dados
+- Criar Feature Test
+  - Criar entidade Produto através do framework Laravel
+    - id
+    - nome
+    - quantidade
+    - valor
+    - created_at
+    - updated_at
+  - Definir rota utilizando verbos HTTP
+  - Testar requisição utilizando Laravel
+    - Verificar Status
+    - Tipo de retorno : JSON
+  - Testar Cadastro do produto
+    - Verificar se o produto foi armazenado no banco de dados
+  - Testar consulta de um produto
+  - Testar consulta de muitos produto
+  - Testar atualizar um produto
+  - Testar remoção de um produto
+
+### Todo : Plus
+
+- Criar teste unitário para
+
 ## Participantes
 
 - Alan Oliveira [ [@sfelix-martins](https://github.com/sfelix-martins) ]
